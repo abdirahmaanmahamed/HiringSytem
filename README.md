@@ -1,9 +1,8 @@
-# HiringSytem
+
 This system is Hiring with Applicant people to get company a Job. The language to build is C# and SQL server
 
 # how to connect c# and SQL server
 using System.Data.SqlClient;    
- # this Namespace Gives all Function about SQL server in C#
  namespace WindowsFormsApp1
 {
     public partial class Login2 : Form
@@ -25,8 +24,7 @@ using System.Data.SqlClient;
             //MessageBox.Show("sucessfully connection Cadde!");
         }
 
-# login from  
-# I used for two texbox  . first  UserName and second Password 
+# login from  .I used for two texbox  . first  UserName and second Password 
 namespace WindowsFormsApp1
 {
     public partial class Login2 : Form
