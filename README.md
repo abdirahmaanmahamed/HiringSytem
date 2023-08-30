@@ -14,8 +14,9 @@ using System.Data.SqlClient;
             InitializeComponent();
         }
 
-       
- private void connect()      # This function gives connect sql and  c#
+  # This function gives connect sql and  c#
+           private void connect()
+
         {
             string constr = "Data Source = DESKTOP-UOO72VA\\SQLEXPRESS; Initial Catalog =HIRIG_SYSTEM;Integrated Security = SSPI";
             conn = new SqlConnection(constr);
@@ -67,7 +68,7 @@ namespace WindowsFormsApp1
 # we call the functio connect 
                        connect();
                     
-# the we Readed for The Database of Hiring System To Create SQL  server The Table of User_registartion to selected two Column   colled USERNAME and USERPASSWORD 
+# then we Readed for The Database of Hiring System To Create SQL  server The Table of User_registartion to selected two Column   colled USERNAME and USERPASSWORD 
 
                     string xOG_Akhrin = "select * FROM User_registartion   where USERNAME='" + textBox1.Text + "' and  USERNAME='" + textBox2.Text + "'  ";
 
@@ -100,6 +101,7 @@ namespace WindowsFormsApp1
 
         }
 
+  #This is Botton doing if click  on it to clear that data input two texBoxs
         private void button2_Click(object sender, EventArgs e)
         {
             textBox1.Text = string.Empty;
@@ -108,30 +110,11 @@ namespace WindowsFormsApp1
 
         }
 
-        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            this.Hide();
-            Forgetpassword h = new Forgetpassword();
-            h.Show();
-        }
        
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-            connect();
-        }
-        private void connect()
-        {
-            string constr = "Data Source = DESKTOP-UOO72VA\\SQLEXPRESS; Initial Catalog =HIRIG_SYSTEM;Integrated Security = SSPI";
-            conn = new SqlConnection(constr);
-            conn.Open();
-            //conn.Close();
-            //MessageBox.Show("sucessfully connection Cadde!");
-        }
-
+      
        
        
-    }
+    
     }
 
 
