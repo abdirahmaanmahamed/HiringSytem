@@ -37,16 +37,7 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        private void Login2_Load(object sender, EventArgs e)
-        {
-            
-
-        }
-
-
-        private void button1_Click(object sender, EventArgs e)
-             
-        {
+        
 # I used  two variable colled datainput1 and datainput2 to store with texBox1 = username and texBox2 = password
     
             string datainput1 = textBox1.Text;
@@ -101,8 +92,9 @@ namespace WindowsFormsApp1
 
 
         }
-
-  #This is Botton doing if click  on it to clear that data input two texBoxs
+  #  This is Botton doing if click  on it to clear that data input two texBoxs
+       
+        
         private void button2_Click(object sender, EventArgs e)
         {
             textBox1.Text = string.Empty;
