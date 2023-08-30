@@ -13,8 +13,9 @@ using System.Data.SqlClient;
         {
             InitializeComponent();
         }
-
-  # This function gives connect sql and  c#
+# This function gives connect sql and  c#
+          
+           
            private void connect()
 
         {
